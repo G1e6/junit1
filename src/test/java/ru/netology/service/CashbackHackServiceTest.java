@@ -7,26 +7,42 @@ import org.junit.Test;
 public class CashbackHackServiceTest {
 
     @Test
-    void remain() {
+    public void remain() {
         CashbackHackService cashbackHackService = new CashbackHackService();
-            int amount = 1000;
+        int amount = 1000;
 
-            int actual = cashbackHackService.remain(amount);
-            int expected = 0;
+        int actual = cashbackHackService.remain(amount);
+        int expected = 0;
 
-         Assert.assertEquals(actual,expected);
-        };
+        Assert.assertEquals(expected, actual);
+    }
+
+
 
     @Test
-    void remain1() {
+    public void remain1() {
         CashbackHackService cashbackHackService = new CashbackHackService();
         int amount = 700;
 
         int actual = cashbackHackService.remain(amount);
         int expected = 300;
 
-        Assert.assertEquals(actual,expected);
-    };
+        Assert.assertEquals(expected, actual);
+    }
+
+
+
+    @Test
+    public void remain2() {
+        CashbackHackService cashbackHackService = new CashbackHackService();
+        int amount = 1700;
+
+        int actual = cashbackHackService.remain(amount);
+        int expected = 300;
+
+        Assert.assertEquals(expected, actual);
+    }
+
 
 
 
