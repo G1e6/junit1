@@ -13,7 +13,7 @@ import org.testng.asserts.Assertion;
 public class CashbackHackServiceTest {
 
     @Test
-    void remain() {
+    public void remain() {
         CashbackHackService cashbackHackService = new CashbackHackService();
         int amount = 1000;
 
@@ -28,7 +28,7 @@ public class CashbackHackServiceTest {
 
 
     @Test
-    void remain1() {
+    public void remain1() {
         CashbackHackService cashbackHackService = new CashbackHackService();
         int amount = 700;
 
@@ -37,6 +37,18 @@ public class CashbackHackServiceTest {
 
         Assert.assertEquals(actual,expected);
     };
+
+    @Test
+    public void remain2() {
+        CashbackHackService cashbackHackService = new CashbackHackService();
+        int amount = 1700;
+
+        int actual = cashbackHackService.remain(amount);
+        int expected = 300;
+
+        Assert.assertEquals(actual,expected);
+    };
+
 
 
 }
