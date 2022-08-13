@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 class CashbackHackServiceTest {
 
     @Test
-    void remain() {
+    public void remain() {
         CashbackHackService cashbackHackService = new CashbackHackService();
             int amount = 1000;
 
@@ -17,7 +17,7 @@ class CashbackHackServiceTest {
         };
 
     @Test
-    void remain1() {
+    public void remain1() {
         CashbackHackService cashbackHackService = new CashbackHackService();
         int amount = 700;
 
@@ -28,7 +28,7 @@ class CashbackHackServiceTest {
     };
 
     @Test
-    void remain2() {
+    public void remain2() {
         CashbackHackService cashbackHackService = new CashbackHackService();
         int amount = 1700;
 
