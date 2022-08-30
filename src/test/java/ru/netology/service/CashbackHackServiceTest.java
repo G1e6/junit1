@@ -6,18 +6,17 @@ import org.testng.annotations.Test;
 
 public class CashbackHackServiceTest {
 
-   // @Test
+    @Test
 
-   // public void remain() {
-    //    CashbackHackService cashbackHackService = new CashbackHackService();
-     //   int amount = 1000;
+    public void remain() {
+        CashbackHackService cashbackHackService = new CashbackHackService();
+        int amount = 1000;
 
-      //  int actual = cashbackHackService.remain(amount);
-       // int expected = 0;
+        int actual = cashbackHackService.remain(amount);
+        int expected = 0;
 
-      //  Assert.assertEquals(actual, expected);
-   // }
-
+        Assert.assertEquals(actual, expected);
+    }
 
 
     @Test
@@ -32,7 +31,6 @@ public class CashbackHackServiceTest {
     }
 
 
-
     @Test
     public void remain2() {
         CashbackHackService cashbackHackService = new CashbackHackService();
@@ -43,8 +41,6 @@ public class CashbackHackServiceTest {
 
         Assert.assertEquals(actual, expected);
     }
-
-
 
 
 }
